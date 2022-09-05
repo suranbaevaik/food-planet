@@ -1,0 +1,28 @@
+.footer_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 30px 6%;
+    background-color: #254F4C;
+}
+
+.list_items{
+    list-style: none;
+}
+
+.list_items li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.list_items li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 19px;
+}

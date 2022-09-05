@@ -1,0 +1,32 @@
+.menu_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px 5% 30px;
+}
+
+.list_menu{
+    list-style: none;
+}
+
+.list_menu li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.list_menu li a{
+    color: #1D3130;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 19px;
+    transition: all 0.3s ease 0s;
+}
+
+.list_menu li a:hover{
+    color: #FF583E;
+}

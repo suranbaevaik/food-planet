@@ -1,0 +1,120 @@
+.nav_bar{
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5% 45px;
+}
+
+.nav_title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    color: #254F4C;
+    line-height: 29px;
+}
+
+.list_trends{
+    list-style: none;
+    margin-right: 270px;
+}
+
+.list_trends li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.list_trends li a{
+    text-decoration: none;
+    color: #1D3130;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 19px;
+    transition: all 0.3s ease 0s;
+}
+
+.list_trends li a:hover{
+    color: #FF583E;
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.trend_card{
+    display: flex;
+    box-sizing: border-box;
+    margin-right: 20px;
+    padding: 0 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 264px;
+    height: 348px;
+    background-color: #2B4241;
+    border-radius: 40px;
+    position: relative;
+}
+
+.burger_img{
+    position: absolute;
+    top: -45px;
+}
+
+.btn{
+    width: 200px;
+    border: none;
+    border-radius: 40px;
+    background-color: #FF583E;
+    padding: 12px 0;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 147.19%;
+    text-transform: uppercase;
+}
+
+.container h2{
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.container p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.container span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.minus{
+    padding: 5px 12px;
+}
+
+.plus{
+    padding-left: 12px;
+}
