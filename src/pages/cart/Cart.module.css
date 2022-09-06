@@ -31,6 +31,21 @@
     width: 1100px;
 }
 
+.order_table thead tr{
+    border-bottom: 1px solid grey;
+}
+
+.order_table thead p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #254F4C;
+}
+
+.order_table input{
+    width: 143px;
+    padding: 15px 25px;
+}
+
 .product_box{
     height: 83px;
     display: flex;
@@ -57,21 +72,17 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #254F4C;
+    color: #1d3130;
 }
 
-.sum_cell{
-    display: flex;
-    flex-direction: column;
-}
-
-.sum_cell button{
-    width: 180px;
+.button_cell button{
+    width: 100%;
     padding: 10px 20px;
     border: none;
-    background-color: #254F4C;
-    border-radius: 40px;
+    background-color: #f44336;
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
@@ -88,26 +99,31 @@
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: #254F4C;
+    color: #1d3130;
 }
 
-.order_table thead tr{
-    border-bottom: 1px solid grey;
-}
-
-.order_table thead p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: #254F4C;
-}
-
-.order_table tfoot tr{
+.sum_cell{
     border-top: 0.5px solid grey;
 }
 
-.order_table input{
-    width: 143px;
-    padding: 15px 25px;
+.sum_cell p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #1d3130;
+}
+
+.sum_title{
+    text-align: right;
+}
+
+.sum_title p{
+    margin-right: 25px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    margin-bottom: -2px;
 }
 
 .order_table tfoot a{
