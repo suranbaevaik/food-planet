@@ -1,0 +1,122 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title_box{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title_box h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 29px;
+    color: #254F4C;
+    margin: 0;
+}
+
+.title_box p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #254F4C;
+}
+
+.order_table{
+    border-collapse: collapse;
+    width: 1100px;
+}
+
+.product_box{
+    height: 83px;
+    display: flex;
+    align-items: center;
+}
+
+.product_box div{
+    margin-right: 40px;
+}
+
+.product_img img{
+    width: 53px;
+}
+
+.remove{
+    margin-left: 15px;
+}
+
+.remove img{
+    width: 20px;
+}
+
+.product_container p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #254F4C;
+}
+
+.sum_cell{
+    display: flex;
+    flex-direction: column;
+}
+
+.sum_cell button{
+    width: 180px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #254F4C;
+    border-radius: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+.sum_number{
+    display: flex;
+    width: 200px;
+}
+
+.sum_number div{
+    margin-right: 10px;
+}
+
+.sum_number div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #254F4C;
+}
+
+.order_table thead tr{
+    border-bottom: 1px solid grey;
+}
+
+.order_table thead p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #254F4C;
+}
+
+.order_table tfoot tr{
+    border-top: 0.5px solid grey;
+}
+
+.order_table input{
+    width: 143px;
+    padding: 15px 25px;
+}
+
+.order_table tfoot a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #5e8bce;
+}
+
+.order_table tfoot a:hover{
+    text-decoration: underline;
+}
+

@@ -1,11 +1,8 @@
 import React from "react";
-import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/header/Header";
 import Main from "./pages/main/Main";
-import Menu from "./pages/menu/Menu";
-import Delivery from "./pages/delivery/Delivery";
-import Contact from "./pages/contact/Contact";
+import Cart from "./pages/cart/Cart";
 
 const App = () => {
     return(
@@ -13,9 +10,7 @@ const App = () => {
             <Header/>
             <Routes>
                 <Route path="/" element={<Main/>}/>
-                <Route path="/menu" element={<Menu/>}/>
-                <Route path="/delivery" element={<Delivery/>}/>
-                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/cart" element={<Cart/>}/>
             </Routes>
         </BrowserRouter>
     )

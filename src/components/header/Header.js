@@ -16,21 +16,23 @@ const Header = () => {
                         <NavLink to="/">Главная</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/menu">Меню</NavLink>
+                        <NavLink to="#">Меню</NavLink>
                         <img src={arrow} alt="arrow"/>
                     </li>
                     <li>
-                        <NavLink to="/delivery">Доставка</NavLink>
+                        <NavLink to="#">Доставка</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact">Контакты</NavLink>
+                        <NavLink to="#">Контакты</NavLink>
                     </li>
                     <li>
                         <img src={phoneIcon} alt="phone-icon"/>
-                        <NavLink to="/contact">+996500405988</NavLink>
+                        <NavLink to="#">+996500405988</NavLink>
                     </li>
                     <li>
-                        <img src={purchaseIcon} alt="purchase-icon"/>
+                        <NavLink to="/cart">
+                            <img src={purchaseIcon} alt="purchase-icon"/>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
