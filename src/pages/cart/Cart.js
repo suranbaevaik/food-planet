@@ -1,4 +1,6 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import burger from '../../assets/images/Burger1.png';
 import remove from '../../assets/icons/remove.png';
 import right_arrow from '../../assets/icons/right-arr.svg';
@@ -100,13 +102,16 @@ const Cart = () => {
                             </td>
                             <td colSpan="3" className={style.button_cell}>
                                 <div>
-                                    <button type="submit">Оформить заказ</button>
+                                    <NavLink to="/cart/ordering">
+                                        <button type="submit">Оформить заказ</button>
+                                    </NavLink>
                                 </div>
                             </td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
+            <Outlet/>
         </div>
     );
 };

@@ -1,0 +1,293 @@
+.container{
+    max-width: 1100px;
+    margin-top: 60px;
+}
+
+.title h3{
+    font-family: 'Roboto', sans-serif;
+    color: #2B4241;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 29px;
+    margin: 0;
+}
+
+.order_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal_data{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_data h5{
+    font-family: 'Roboto', sans-serif;
+    color: #2B4241;
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+
+.subtitle{
+    margin-bottom: 20px;
+}
+
+.subtitle a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #5e8bd4;
+    margin-right: 20px;
+}
+
+.personal_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal_form input{
+    width: 338px;
+    margin: 5px;
+    padding: 16px 25px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+}
+
+.personal_form input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd;
+}
+
+.tb_box{
+    padding-bottom: 10px;
+}
+
+.tb_box p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav_list ul{
+    padding: 0;
+}
+
+.nav_list ul li{
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    color: #767676;
+}
+
+.list_first{
+    margin-right: 340px;
+}
+
+.list_second{
+    margin-right: 63px;
+}
+
+.list_third{
+    margin-right: 108px;
+}
+
+.br{
+    background-color: #D2D2D7;
+    border: 0 none;
+    height: 1px;
+}
+
+.product_name{
+    display: flex;
+    width: 400px;
+}
+
+.product_name div{
+    margin-right: 30px;
+}
+
+.product_name img{
+    width: 53px;
+    padding-top: 18px;
+}
+
+.product_name a{
+    color: #5e8bd4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.product_name p{
+    margin-bottom: 5px;
+}
+
+.amount p{
+    margin-right: 135px;
+}
+
+.product_price p{
+    margin-right: 53px;
+}
+
+.price_sum p{
+    margin-left: 30px;
+}
+
+.delivery_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delivery_address{
+    width: 338px;
+    margin: 5px;
+    padding: 16px 25px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+}
+
+.delivery_address::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd;
+}
+
+.radio_box{
+    width: 348px;
+    margin: 5px;
+    padding: 14px 20px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.radio_box input{
+    margin-right: 10px;
+}
+
+.delivery_country{
+    width: 390px;
+    margin: 5px;
+    padding: 15px 25px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.side_box{
+    width: 280px;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #ebf1fa;
+    border-radius: 5px;
+}
+.heading p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.heading input{
+    width: 180px;
+    margin: 0 20px 20px;
+    padding: 14px 25px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: #bdbdbd;
+}
+
+.sum_info h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0 0 0px 20px;
+}
+
+.sum_info div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt_1{
+    margin-left: 20px;
+    margin-right: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #767676;
+    font-size: 14px;
+}
+
+.txt_2{
+    margin-left: 20px;
+    margin-right: 85px;
+    font-family: 'Roboto', sans-serif;
+    color: #767676;
+    font-size: 14px;
+}
+
+.number_1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.number_2{
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.btn button{
+    margin-left: 20px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e8bd4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px 40px;
+}
+
+.payment_box h5{
+    font-family: 'Roboto', sans-serif;
+    color: #2B4241;
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+
+.payment_form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.payment_element{
+    width: 250px;
+    height: 100%;
+    margin: 5px;
+    padding: 15px 20px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.payment_element input{
+    margin-right: 10px;
+}
+
+.payment_el{
+    width: 250px;
+    height: 100%;
+    margin: 5px;
+    padding: 5px 20px 7px;
+    border: 1px solid #D2D2D7;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.payment_el input{
+    margin-right: 10px;
+}
