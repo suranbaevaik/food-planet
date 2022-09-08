@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Main from "./pages/main/Main";
 import Cart from "./pages/cart/Cart";
 import Ordering from "./pages/ordering/Ordering";
+import NotFound from "./pages/notFound/NotFound";
 
 const App = () => {
     return(
@@ -11,9 +12,9 @@ const App = () => {
             <Header/>
             <Routes>
                 <Route path="/" element={<Main/>}/>
-                <Route path="/cart" element={<Cart/>}>
-                    <Route path="ordering" element={<Ordering/>}/>
-                </Route>
+                <Route path="/cart" element={<Cart/>}/>
+                <Route path="/ordering" element={<Ordering/>}/>
+                <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
     )

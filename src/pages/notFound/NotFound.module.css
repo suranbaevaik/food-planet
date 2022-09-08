@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container h1, h2{
+    font-family: 'Roboto', sans-serif;
+    color: #2B4241;
+    font-weight: 900;
+    font-size: 36px;
+    margin: 0;
+}
+

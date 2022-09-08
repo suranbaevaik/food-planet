@@ -102,7 +102,7 @@ const Cart = () => {
                             </td>
                             <td colSpan="3" className={style.button_cell}>
                                 <div>
-                                    <NavLink to="/cart/ordering">
+                                    <NavLink to="/ordering">
                                         <button type="submit">Оформить заказ</button>
                                     </NavLink>
                                 </div>
