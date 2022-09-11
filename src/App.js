@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import Main from "./pages/main/Main";
 import Cart from "./pages/cart/Cart";
 import Ordering from "./pages/ordering/Ordering";
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path="/ordering" element={<Ordering/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
+            <Footer/>
         </BrowserRouter>
     )
 }

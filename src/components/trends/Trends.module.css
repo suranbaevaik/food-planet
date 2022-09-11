@@ -32,7 +32,6 @@
     font-weight: 400;
     text-align: center;
     line-height: 19px;
-    transition: all 0.3s ease 0s;
 }
 
 .list_trends li a:hover{
@@ -60,6 +59,11 @@
     background-color: #2B4241;
     border-radius: 40px;
     position: relative;
+    transition: transform .2s;
+}
+
+.trend_card:hover{
+    transform: scale(1.1);
 }
 
 .burger_img{
@@ -73,6 +77,7 @@
     border-radius: 40px;
     background-color: #FF583E;
     padding: 12px 0;
+    cursor: pointer;
 }
 
 .btn a{

@@ -4,7 +4,7 @@ import Trends from "../../components/trends/Trends";
 import Menu from "../../components/menu/Menu";
 import Benefits from "../../components/benefits/Benefits";
 import Feedbacks from "../../components/feedbacks/Feedbacks";
-import Footer from "../../components/footer/Footer";
+
 
 const Main = () => {
     return (
@@ -14,7 +14,6 @@ const Main = () => {
             <Menu/>
             <Benefits/>
             <Feedbacks/>
-            <Footer/>
         </>
     );
 };

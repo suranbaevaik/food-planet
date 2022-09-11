@@ -5,9 +5,7 @@ import burger from "../../assets/images/Burger1.png";
 const Ordering = () => {
     return (
         <div className={style.container}>
-            <div className={style.title}>
-                <h3>Оформление заказа</h3>
-            </div>
+            <h3 className={style.title}>Оформление заказа</h3>
             <div className={style.order_box}>
                 <div className={style.personal_data}>
                     <h5>Ваши контактные данные</h5>

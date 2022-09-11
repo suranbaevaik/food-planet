@@ -1,9 +1,9 @@
 .container{
     max-width: 1100px;
-    margin-top: 60px;
+    margin: 60px auto;
 }
 
-.title h3{
+.title{
     font-family: 'Roboto', sans-serif;
     color: #2B4241;
     font-weight: 900;

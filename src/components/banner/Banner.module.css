@@ -36,7 +36,7 @@
     background: #FF583E;
     border: none;
     border-radius: 100px;
-
+    cursor: pointer;
 }
 
 .btn a{

@@ -32,7 +32,6 @@
     font-weight: 400;
     text-align: center;
     line-height: 19px;
-    transition: all 0.3s ease 0s;
 }
 
 .list_menu li a:hover{
@@ -93,6 +92,11 @@
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform .2s;
+}
+
+.menu_card:hover{
+    transform: scale(1.1);
 }
 
 .pizza_img{
@@ -106,6 +110,7 @@
     border-radius: 40px;
     background-color: #254F4C;
     padding: 12px 0;
+    cursor: pointer;
 }
 
 .btn a{
@@ -170,4 +175,5 @@
     line-height: 147.19%;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
 }

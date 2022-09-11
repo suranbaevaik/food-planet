@@ -24,7 +24,6 @@
     font-weight: 400;
     text-align: center;
     line-height: 19px;
-    transition: all 0.3s ease 0s;
 }
 
 .list_menu li a:hover{
