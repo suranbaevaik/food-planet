@@ -9,7 +9,9 @@ import style from './Header.module.css';
 const Header = () => {
     return (
         <header className={style.menu_bar}>
-            <img src={logo} alt="logo"/>
+            <NavLink to="/">
+                <img src={logo} alt="logo"/>
+            </NavLink>
             <nav>
                 <ul className={style.list_menu}>
                     <li>

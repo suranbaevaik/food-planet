@@ -175,5 +175,9 @@
     line-height: 147.19%;
     text-align: center;
     text-transform: uppercase;
+}
+
+.more_btn button:hover{
+    box-shadow: 0 0 10px 2px rgba(255, 88, 62, 0.2);
     cursor: pointer;
 }

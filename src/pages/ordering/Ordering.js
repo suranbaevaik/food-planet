@@ -151,7 +151,7 @@ const Ordering = () => {
                         </div>
                     </form>
                     <h5>Комментарий к заказу</h5>
-                    <form action="#">
+                    <form action="#" className={style.comment}>
                         <textarea cols="145" rows="5"> </textarea>
                     </form>
                 </div>

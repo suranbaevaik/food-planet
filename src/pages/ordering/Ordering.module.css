@@ -291,3 +291,7 @@
 .payment_el input{
     margin-right: 10px;
 }
+
+.comment textarea{
+    padding: 20px;
+}
