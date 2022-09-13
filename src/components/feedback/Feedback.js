@@ -1,10 +1,10 @@
 import React from 'react';
-import feedbacks from "../../constants/feedbacks";
+import feedback from "../../constants/feedback";
 import FeedbackElement from "./FeedbackElement";
 import style from './Feedbacks.module.css';
 
-const Feedbacks = () => {
-    const elements = feedbacks.map((item, id) => {
+const Feedback = () => {
+    const elements = feedback.map((item, id) => {
         return <FeedbackElement
             key={id}
             img={item.img}
@@ -25,4 +25,4 @@ const Feedbacks = () => {
     );
 };
 
-export default Feedbacks;
+export default Feedback;

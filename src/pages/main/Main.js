@@ -3,7 +3,7 @@ import Banner from "../../components/banner/Banner";
 import Trends from "../../components/trends/Trends";
 import Menu from "../../components/menu/Menu";
 import Benefits from "../../components/benefits/Benefits";
-import Feedbacks from "../../components/feedbacks/Feedbacks";
+import Feedback from "../../components/feedback/Feedback";
 
 
 const Main = () => {
@@ -13,7 +13,7 @@ const Main = () => {
             <Trends/>
             <Menu/>
             <Benefits/>
-            <Feedbacks/>
+            <Feedback/>
         </>
     );
 };

@@ -1,6 +1,6 @@
 import ellipse from '../assets/icons/Ellipse.svg';
 
-const feedbacks = [
+const feedback = [
     {
         id: 1,
         img: ellipse,
@@ -32,4 +32,4 @@ const feedbacks = [
     }
 ]
 
-export default feedbacks;
+export default feedback;
