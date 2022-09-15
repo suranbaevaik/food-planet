@@ -1,0 +1,122 @@
+.container{
+    height: 1200px;
+    display: flex;
+    margin: 0;
+}
+
+.main_box{
+    width: 988px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head_box{
+    width: 100%;
+    display: flex;
+}
+
+.head_box h4{
+    width: 600px;
+    margin: 36px 0 0 30px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #252733;
+}
+
+.head_box img{
+    margin: 32px 37px 0 0;
+}
+
+.head_box p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 48px 14px 0 0;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+
+.menu_box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.product_card{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding: 15px 27px;
+    margin: 0 40px 60px 0;
+    border: 1px solid #DFE0EB;
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+
+.product_card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product_card img{
+    width: 100%;
+}
+
+.product_card h5{
+    margin: 15px 0 5px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #1D3130;
+    text-align: center;
+}
+
+.product_card p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: #1D3130;
+}
+
+.product_card span{
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    color: #1D3130;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.btn_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_box button{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 0.4px;
+}
+
+.btn_box button:hover{
+    cursor: pointer;
+}
+
+.edit_btn{
+    background-color: #798aee;
+}
+
+.delete_btn{
+    background-color: red;
+}
