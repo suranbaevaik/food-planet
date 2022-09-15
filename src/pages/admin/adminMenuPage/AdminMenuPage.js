@@ -22,13 +22,16 @@ const AdminMenuPage = () => {
                     <img src={photo} alt=""/>
                 </div>
                 <div className={style.menu_box}>
-                    <div className={style.menu_item}>
-                        <img src={burger} alt=""/>
-                        <div className={style.name_box}>
-                            <h5>Бургеры</h5>
-                            <NavLink to="/admin/menu/burgers">перейти ></NavLink>
+                    <NavLink to="/admin/menu/burgers">
+                        <div className={style.menu_item}>
+                            <img src={burger} alt=""/>
+                            <div className={style.name_box}>
+                                <h5>Бургеры</h5>
+                                <NavLink to="/admin/menu/burgers">перейти ></NavLink>
+                            </div>
                         </div>
-                    </div>
+                    </NavLink>
+
                 </div>
             </div>
         </div>

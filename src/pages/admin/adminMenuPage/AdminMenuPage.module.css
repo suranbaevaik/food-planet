@@ -46,6 +46,10 @@
     margin-top: 50px;
 }
 
+.menu_box a{
+    text-decoration: none;
+}
+
 .menu_item{
     width: 220px;
     margin: 10px 30px 10px;
@@ -55,8 +59,11 @@
     align-items: center;
     border: 1px solid #DFE0EB;
     background: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
+}
+
+.menu_item:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu_item img{
