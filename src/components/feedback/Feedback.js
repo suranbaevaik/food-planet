@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import feedback from "../../constants/feedback";
 import FeedbackElement from "./FeedbackElement";
-import style from './Feedbacks.module.css';
+import s from "./Feedbacks.module.css";
 
 const Feedback = () => {
-    const elements = feedback.map((item, id) => {
+    const elements = feedback.map((item) => {
         return <FeedbackElement
-            key={id}
+            key={item.id}
             img={item.img}
             name={item.name}
             text={item.text}
@@ -16,8 +16,8 @@ const Feedback = () => {
 
     return (
         <div>
-            <h2 className={style.title}>Отзывы</h2>
-            <div className={style.container}>
+            <h2 className={s.title}>Отзывы</h2>
+            <div className={s.container}>
                 {elements}
             </div>
         </div>

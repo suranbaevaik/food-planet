@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import menu from "../../constants/menu";
 import MenuElement from "./MenuElement";
 import listArrow from "../../assets/icons/list-arrow.svg";
-import style from "./Menu.module.css";
+import s from "./Menu.module.css";
 
 const Menu = () => {
     const elements = menu.map((item, id) => {
@@ -17,10 +17,10 @@ const Menu = () => {
 
     return (
         <>
-            <div className={style.nav_bar}>
-                <h2 className={style.nav_title}>Меню</h2>
+            <div className={s.nav_bar}>
+                <h2 className={s.nav_title}>Меню</h2>
                 <nav>
-                    <ul className={style.list_menu}>
+                    <ul className={s.list_menu}>
                         <li><a href="#">Пицца</a></li>
                         <li><a href="#">Бургеры</a></li>
                         <li><a href="#">Суши</a></li>
@@ -31,19 +31,19 @@ const Menu = () => {
                     </ul>
                 </nav>
             </div>
-            <div className={style.sort_box}>
+            <div className={s.sort_box}>
                 <div>
                     <p>Сортировать  по:</p>
                 </div>
-                <div className={style.filter}>
+                <div className={s.filter}>
                     <p>По умолчанию</p>
                     <img src={listArrow} alt="arrow"/>
                 </div>
             </div>
-            <div className={style.container}>
+            <div className={s.container}>
                 {elements}
             </div>
-            <div className={style.more_btn}>
+            <div className={s.more_btn}>
                 <button>Показать еще</button>
             </div>
         </>

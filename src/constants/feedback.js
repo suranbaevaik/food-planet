@@ -1,4 +1,4 @@
-import ellipse from '../assets/icons/Ellipse.svg';
+import ellipse from "../assets/icons/Ellipse.svg";
 
 const feedback = [
     {

@@ -1,9 +1,9 @@
-import pizza1 from '../assets/images/Pizza1.png';
-import pizza2 from '../assets/images/Pizza2.png';
-import pizza3 from '../assets/images/Pizza3.png';
-import pizza4 from '../assets/images/Pizza4.png';
-import pizza5 from '../assets/images/Pizza5.png';
-import pizza6 from '../assets/images/Pizza6.png';
+import pizza1 from "../assets/images/Pizza1.png";
+import pizza2 from "../assets/images/Pizza2.png";
+import pizza3 from "../assets/images/Pizza3.png";
+import pizza4 from "../assets/images/Pizza4.png";
+import pizza5 from "../assets/images/Pizza5.png";
+import pizza6 from "../assets/images/Pizza6.png";
 
 const menu = [
     {

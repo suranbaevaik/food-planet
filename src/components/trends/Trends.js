@@ -1,12 +1,12 @@
-import React from 'react';
-import trends from '../../constants/trends';
-import Trend from "./Trend";
-import style from './Trends.module.css';
+import React from "react";
+import trends from "../../constants/trends";
+import TrendElement from "./TrendElement";
+import s from "./Trends.module.css";
 
 const Trends = () => {
-    const elements = trends.map((item, id) => {
-        return <Trend
-            key={id}
+    const elements = trends.map((item) => {
+        return <TrendElement
+            key={item.id}
             img={item.img}
             title={item.title}
             desc={item.desc}
@@ -16,10 +16,10 @@ const Trends = () => {
 
     return (
         <>
-            <div className={style.nav_bar}>
-                <h2 className={style.nav_title}>Новинки</h2>
+            <div className={s.nav_bar}>
+                <h2 className={s.nav_title}>Новинки</h2>
                 <nav>
-                    <ul className={style.list_trends}>
+                    <ul className={s.list_trends}>
                         <li><a href="#">Пицца</a></li>
                         <li><a href="#">Бургеры</a></li>
                         <li><a href="#">Суши</a></li>
@@ -30,7 +30,7 @@ const Trends = () => {
                     </ul>
                 </nav>
             </div>
-            <div className={style.container}>
+            <div className={s.container}>
                 {elements}
             </div>
         </>

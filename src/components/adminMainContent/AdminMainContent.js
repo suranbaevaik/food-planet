@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import {NavLink} from "react-router-dom";
-import s from "./adminMainContent.module.css";
 import search from "../../assets/icons/search.svg";
 import notification from "../../assets/icons/new.svg";
 import divider from "../../assets/icons/h-divider.svg";
 import photo from "../../assets/icons/photo.svg";
+import s from "./AdminMainContent.module.css";
 
 const AdminMainContent = () => {
     return (
@@ -22,7 +22,7 @@ const AdminMainContent = () => {
                     <h5>Пицца</h5>
                     <p>60</p>
                 </div>
-                <NavLink to='/admin/menu/burgers'>
+                <NavLink to="/admin/menu/burgers">
                     <div>
                         <h5>Бургер</h5>
                         <p>16</p>

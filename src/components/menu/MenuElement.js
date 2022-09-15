@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 import minus from "../../assets/icons/minus.svg";
 import plus from "../../assets/icons/plus.svg";
-import style from "./Menu.module.css";
+import s from "./Menu.module.css";
 
 const MenuElement = (props) => {
     return (
-        <div className={style.menu_card}>
-            <img className={style.pizza_img} src={props.img}/>
+        <div className={s.menu_card}>
+            <img className={s.pizza_img} src={props.img} alt=""/>
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
             <span>{props.price}</span>
-            <p><img className={style.minus} src={minus} alt="minus"/>
+            <p><img className={s.minus} src={minus} alt=""/>
                 1
-                <img className={style.plus} src={plus} alt="plus"/>
+                <img className={s.plus} src={plus} alt=""/>
             </p>
-            <button className={style.btn}><a href="#">В корзину</a></button>
+            <button className={s.btn}><a href="#">В корзину</a></button>
         </div>
     );
 };

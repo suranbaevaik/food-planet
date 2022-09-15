@@ -1,7 +1,7 @@
-import burger1 from '../assets/images/Burger1.png';
-import burger2 from '../assets/images/Burger2.png';
-import burger3 from '../assets/images/Burger4.png';
-import burger4 from '../assets/images/Burger3.png';
+import burger1 from "../assets/images/Burger1.png";
+import burger2 from "../assets/images/Burger2.png";
+import burger3 from "../assets/images/Burger4.png";
+import burger4 from "../assets/images/Burger3.png";
 
 const trends = [
     {

@@ -1,25 +1,25 @@
-import React from 'react';
+import React from "react";
 import {NavLink} from "react-router-dom";
-import logo from '../../assets/icons/food-planet-logo.svg';
-import phoneIcon from '../../assets/icons/phone-icon.svg';
-import purchaseIcon from '../../assets/icons/purchase-icon.svg';
-import arrow from '../../assets/icons/down-arrow.svg';
-import style from './Header.module.css';
+import logo from "../../assets/icons/food-planet-logo.svg";
+import phoneIcon from "../../assets/icons/phone-icon.svg";
+import purchaseIcon from "../../assets/icons/purchase-icon.svg";
+import arrow from "../../assets/icons/down-arrow.svg";
+import s from "./Header.module.css";
 
 const Header = () => {
     return (
-        <header className={style.menu_bar}>
+        <header className={s.menu_bar}>
             <NavLink to="/">
-                <img src={logo} alt="logo"/>
+                <img src={logo} alt=""/>
             </NavLink>
             <nav>
-                <ul className={style.list_menu}>
+                <ul className={s.list_menu}>
                     <li>
                         <NavLink to="/">Главная</NavLink>
                     </li>
                     <li>
                         <NavLink to="#">Меню</NavLink>
-                        <img src={arrow} alt="arrow"/>
+                        <img src={arrow} alt=""/>
                     </li>
                     <li>
                         <NavLink to="#">Доставка</NavLink>
@@ -28,12 +28,12 @@ const Header = () => {
                         <NavLink to="#">Контакты</NavLink>
                     </li>
                     <li>
-                        <img src={phoneIcon} alt="phone-icon"/>
+                        <img src={phoneIcon} alt=""/>
                         <NavLink to="#">+996500405988</NavLink>
                     </li>
                     <li>
                         <NavLink to="/cart">
-                            <img src={purchaseIcon} alt="purchase-icon"/>
+                            <img src={purchaseIcon} alt=""/>
                         </NavLink>
                     </li>
                 </ul>

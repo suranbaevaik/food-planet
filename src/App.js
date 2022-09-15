@@ -14,14 +14,14 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<MainPage/>}/>
                 <Route path="/cart" element={<CartPage/>}/>
-                <Route path="/ordering" element={<CheckoutPage/>}/>
+                <Route path="/checkout" element={<CheckoutPage/>}/>
                 <Route path="/admin/main" element={<AdminMainPage/>}/>
                 <Route path="/admin/menu" element={<AdminMenuPage/>}/>
                 <Route path="/admin/menu/:menu_name" element={<AdminProductsPage/>}/>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
         </BrowserRouter>
-    )
-}
+    );
+};
 
 export default App;

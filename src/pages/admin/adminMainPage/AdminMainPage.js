@@ -1,12 +1,12 @@
-import React from 'react';
-import style from './AdminMainPage.module.css';
+import React from "react";
 import AdminMainContent from "../../../components/adminMainContent/AdminMainContent";
-import SideHeader from "../../../components/sideHeader/SideHeader";
+import SideBar from "../../../components/sideBar/SideBar";
+import s from "./AdminMainPage.module.css";
 
 const AdminMainPage = () => {
     return (
-        <div className={style.container}>
-            <SideHeader/>
+        <div className={s.container}>
+            <SideBar/>
             <AdminMainContent/>
         </div>
     );

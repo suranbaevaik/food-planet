@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
+import burgers from "../../../constants/trends";
+import SideBar from "../../../components/sideBar/SideBar";
+import AdminProductElement from "./AdminProductElement";
 import search from "../../../assets/icons/search.svg";
 import notification from "../../../assets/icons/new.svg";
 import divider from "../../../assets/icons/h-divider.svg";
 import photo from "../../../assets/icons/photo.svg";
-import burgers from '../../../constants/trends';
-import SideHeader from "../../../components/sideHeader/SideHeader";
-import AdminProductElement from "./AdminProductElement";
-import style from './AdminProductsPage.module.css';
+import s from "./AdminProductsPage.module.css";
 
 const AdminProductsPage = () => {
     const elements = burgers.map((item) => {
@@ -20,10 +20,10 @@ const AdminProductsPage = () => {
     })
 
     return (
-        <div className={style.container}>
-            <SideHeader/>
-            <div className={style.main_box}>
-                <div className={style.head_box}>
+        <div className={s.container}>
+            <SideBar/>
+            <div className={s.main_box}>
+                <div className={s.head_box}>
                     <h4>Бургеры</h4>
                     <img src={search} alt=""/>
                     <img src={notification} alt=""/>
@@ -31,7 +31,7 @@ const AdminProductsPage = () => {
                     <p>Jones Ferdinand</p>
                     <img src={photo} alt=""/>
                 </div>
-                <div className={style.menu_box}>
+                <div className={s.menu_box}>
                     {elements}
                 </div>
             </div>

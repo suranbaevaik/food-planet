@@ -1,14 +1,14 @@
-import React from 'react';
-import footerLogo from '../../assets/icons/footer-logo.svg';
-import telephone from '../../assets/icons/telefon.svg';
-import style from './Footer.module.css';
+import React from "react";
+import footerLogo from "../../assets/icons/footer-logo.svg";
+import telephone from "../../assets/icons/telefon.svg";
+import s from "./Footer.module.css";
 
 const Footer = () => {
     return (
-        <footer className={style.footer_bar}>
+        <footer className={s.footer_bar}>
             <img src={footerLogo} alt=""/>
             <nav>
-                <ul className={style.list_items}>
+                <ul className={s.list_items}>
                     <li>
                         <a href="#">Главная</a>
                     </li>
