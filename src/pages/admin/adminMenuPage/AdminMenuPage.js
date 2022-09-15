@@ -26,7 +26,7 @@ const AdminMenuPage = () => {
                         <img src={burger} alt=""/>
                         <div className={style.name_box}>
                             <h5>Бургеры</h5>
-                            <NavLink to="/admin/burgers">перейти ></NavLink>
+                            <NavLink to="/admin/menu/burgers">перейти ></NavLink>
                         </div>
                     </div>
                 </div>

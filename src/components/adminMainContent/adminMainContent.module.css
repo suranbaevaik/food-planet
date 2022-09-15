@@ -41,6 +41,10 @@
     margin-top: 50px;
 }
 
+.menu_box a{
+    text-decoration: none;
+}
+
 .menu_box div{
     width: 215px;
     margin: 10px 10px 10px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 import s from "./adminMainContent.module.css";
 import search from "../../assets/icons/search.svg";
 import notification from "../../assets/icons/new.svg";
@@ -21,10 +22,12 @@ const AdminMainContent = () => {
                     <h5>Пицца</h5>
                     <p>60</p>
                 </div>
-                <div>
-                    <h5>Бургер</h5>
-                    <p>16</p>
-                </div>
+                <NavLink to='/admin/menu/burgers'>
+                    <div>
+                        <h5>Бургер</h5>
+                        <p>16</p>
+                    </div>
+                </NavLink>
                 <div>
                     <h5>Суши</h5>
                     <p>43</p>
