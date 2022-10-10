@@ -11,7 +11,6 @@ import s from "./CartPage.module.css";
 const CartPage = () => {
     return (
         <>
-            <Header/>
             <div className={s.container}>
                 <div className={s.title_box}>
                     <h3>Корзина</h3>

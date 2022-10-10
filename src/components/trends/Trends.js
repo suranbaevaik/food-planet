@@ -1,12 +1,28 @@
-import React from "react";
-import trends from "../../constants/trends";
+import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
+import api from "../../constants/api";
 import TrendElement from "./TrendElement";
 import s from "./Trends.module.css";
+import {useParams} from "react-router-dom";
 
 const Trends = () => {
-    const elements = trends.map((item) => {
+    const params = useParams();
+    const [trend, setTrend] = useState([]);
+
+    const getTrends = () => {
+        const url = api[params.trend_name];
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setTrend(data))
+    }
+
+    useEffect(() => {
+        getTrends()
+    }, [])
+
+    const elements = trend.map((item, index) => {
         return <TrendElement
-            key={item.id}
+            key={index}
             img={item.img}
             title={item.title}
             desc={item.desc}
@@ -20,13 +36,13 @@ const Trends = () => {
                 <h2 className={s.nav_title}>Новинки</h2>
                 <nav>
                     <ul className={s.list_trends}>
-                        <li><a href="#">Пицца</a></li>
-                        <li><a href="#">Бургеры</a></li>
-                        <li><a href="#">Суши</a></li>
-                        <li><a href="#">Роллы</a></li>
-                        <li><a href="#">Салаты</a></li>
-                        <li><a href="#">Десерты</a></li>
-                        <li><a href="#">Напитки</a></li>
+                        <li><Link to="/trends/pizza">Пицца</Link></li>
+                        <li><Link to="/trends/burgers" element={<Trends/>}>Бургеры</Link></li>
+                        <li><Link to="/trends/sushi">Суши</Link></li>
+                        <li><Link to="/trends/rolls">Роллы</Link></li>
+                        <li><Link to="/trends/salads">Салаты</Link></li>
+                        <li><Link to="/trends/desserts">Десерты</Link></li>
+                        <li><Link to="/trends/drinks">Напитки</Link></li>
                     </ul>
                 </nav>
             </div>
