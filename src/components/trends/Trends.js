@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import {NavLink, useParams} from "react-router-dom";
 import api from "../../constants/api";
 import TrendElement from "./TrendElement";
 import s from "./Trends.module.css";
-import {useParams} from "react-router-dom";
 
 const Trends = () => {
     const params = useParams();
@@ -30,19 +29,21 @@ const Trends = () => {
         />
     })
 
+    const setActive = ({isActive}) => isActive ? 'active' : '';
+
     return (
         <>
             <div className={s.nav_bar}>
                 <h2 className={s.nav_title}>Новинки</h2>
                 <nav>
                     <ul className={s.list_trends}>
-                        <li><Link to="/trends/pizza">Пицца</Link></li>
-                        <li><Link to="/trends/burgers" element={<Trends/>}>Бургеры</Link></li>
-                        <li><Link to="/trends/sushi">Суши</Link></li>
-                        <li><Link to="/trends/rolls">Роллы</Link></li>
-                        <li><Link to="/trends/salads">Салаты</Link></li>
-                        <li><Link to="/trends/desserts">Десерты</Link></li>
-                        <li><Link to="/trends/drinks">Напитки</Link></li>
+                        <li><NavLink to="/trends/pizza" className={setActive}>Пицца</NavLink></li>
+                        <li><NavLink to="/trends/burgers" className={setActive}>Бургеры</NavLink></li>
+                        <li><NavLink to="/trends/sushi" className={setActive}>Суши</NavLink></li>
+                        <li><NavLink to="/trends/rolls" className={setActive}>Роллы</NavLink></li>
+                        <li><NavLink to="/trends/salads" className={setActive}>Салаты</NavLink></li>
+                        <li><NavLink to="/trends/desserts" className={setActive}>Десерты</NavLink></li>
+                        <li><NavLink to="/trends/drinks" className={setActive}>Напитки</NavLink></li>
                     </ul>
                 </nav>
             </div>

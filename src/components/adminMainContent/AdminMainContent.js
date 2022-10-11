@@ -17,41 +17,52 @@ const AdminMainContent = () => {
                 <p>Jones Ferdinand</p>
                 <img src={photo} alt=""/>
             </div>
+            <div className={s.add_link}>
+                <NavLink to="/admin/addProducts">Добавить товар</NavLink>
+            </div>
             <div className={s.menu_box}>
-                <div>
-                    <h5>Пицца</h5>
-                    <p>60</p>
-                </div>
+                <NavLink to="/admin/menu/pizza">
+                    <div>
+                        <h5>Пицца</h5>
+                        <p>9</p>
+                    </div>
+                </NavLink>
                 <NavLink to="/admin/menu/burgers">
                     <div>
                         <h5>Бургер</h5>
-                        <p>16</p>
+                        <p>5</p>
                     </div>
                 </NavLink>
-                <div>
-                    <h5>Суши</h5>
-                    <p>43</p>
-                </div>
-                <div>
-                    <h5>Роллы</h5>
-                    <p>64</p>
-                </div>
-                <div>
-                    <h5>Салаты</h5>
-                    <p>60</p>
-                </div>
-                <div>
-                    <h5>Десерты</h5>
-                    <p>60</p>
-                </div>
-                <div>
-                    <h5>Напитки</h5>
-                    <p>43</p>
-                </div>
-                <div>
-                    <h5>Роллы</h5>
-                    <p>64</p>
-                </div>
+                <NavLink to="/admin/menu/sushi">
+                    <div>
+                        <h5>Суши</h5>
+                        <p>1</p>
+                    </div>
+                </NavLink>
+                <NavLink to="/admin/menu/rolls">
+                    <div>
+                        <h5>Роллы</h5>
+                        <p>1</p>
+                    </div>
+                </NavLink>
+                <NavLink to="/admin/menu/salads">
+                    <div>
+                        <h5>Салаты</h5>
+                        <p>1</p>
+                    </div>
+                </NavLink>
+                <NavLink to="/admin/menu/desserts">
+                    <div>
+                        <h5>Десерты</h5>
+                        <p>1</p>
+                    </div>
+                </NavLink>
+                <NavLink to="/admin/menu/drinks">
+                    <div>
+                        <h5>Напитки</h5>
+                        <p>1</p>
+                    </div>
+                </NavLink>
             </div>
         </div>
     );

@@ -1,7 +1,8 @@
-import React from "react";
-import burgers from "../../../constants/trends";
+import React, {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
+import toast from "react-hot-toast";
+import api from "../../../constants/api";
 import SideBar from "../../../components/sideBar/SideBar";
-import AdminProductElement from "./AdminProductElement";
 import search from "../../../assets/icons/search.svg";
 import notification from "../../../assets/icons/new.svg";
 import divider from "../../../assets/icons/h-divider.svg";
@@ -9,22 +10,64 @@ import photo from "../../../assets/icons/photo.svg";
 import s from "./AdminProductsPage.module.css";
 
 const AdminProductsPage = () => {
-    const elements = burgers.map((item) => {
-        return <AdminProductElement
-            key={item.id}
-            img={item.img}
-            title={item.title}
-            desc={item.desc}
-            price={item.price}
-        />
-    })
+    const params = useParams();
+    const [product, setProduct] = useState([]);
+
+    const getProducts = () => {
+        const url = api[params.menu_name];
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setProduct(data))
+    }
+
+    useEffect(() => {
+        getProducts();
+    }, [])
+
+    let title;
+    if (params.menu_name === 'pizza'){
+        title= 'Пицца';
+
+    } else if (params.menu_name === 'burgers'){
+        title = 'Бургеры';
+
+    } else if (params.menu_name === 'sushi'){
+        title = 'Суши';
+    } else if (params.menu_name === 'rolls'){
+        title = 'Роллы';
+    } else if (params.menu_name === 'salads'){
+        title = 'Салаты';
+    } else if (params.menu_name === 'desserts'){
+        title = 'Десерты';
+    } else if (params.menu_name === 'drinks'){
+        title = 'Напитки';
+    }
+
+    const deleteProducts = (id) => {
+        const url = api[params.menu_name] + '/' + id;
+
+        const options = {
+            method: 'DELETE'
+        }
+
+        fetch(url, options)
+            .then(response => {
+                if (response.ok){
+                    toast.success('Товар успешно удален')
+                    getProducts();
+                } else {
+                    toast.error('Упс ошибочка. Попробуйте позже')
+                }
+            })
+    }
 
     return (
         <div className={s.container}>
             <SideBar/>
             <div className={s.main_box}>
                 <div className={s.head_box}>
-                    <h4>Бургеры</h4>
+                    <h4>{title}</h4>
                     <img src={search} alt=""/>
                     <img src={notification} alt=""/>
                     <img src={divider} alt=""/>
@@ -32,7 +75,22 @@ const AdminProductsPage = () => {
                     <img src={photo} alt=""/>
                 </div>
                 <div className={s.menu_box}>
-                    {elements}
+                    {
+                        product.map((item) => {
+                            return (
+                                <div className={s.product_card}>
+                                    <img src={item.img} alt=""/>
+                                    <h5>{item.title}</h5>
+                                    <p>{item.desc}</p>
+                                    <span>{item.price}</span>
+                                    <div className={s.btn_box}>
+                                        <button className={s.edit_btn}>Редактировать</button>
+                                        <button className={s.delete_btn} onClick={() => deleteProducts(item.id)}>Удалить</button>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>

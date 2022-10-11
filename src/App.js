@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Toaster} from "react-hot-toast";
 import MainPage from "./pages/site/mainPage/MainPage";
 import CartPage from "./pages/site/cartPage/CartPage";
 import CheckoutPage from "./pages/site/checkoutPage/CheckoutPage";
@@ -9,6 +10,7 @@ import AdminProductsPage from "./pages/admin/adminProductsPage/AdminProductsPage
 import AdminMenuPage from "./pages/admin/adminMenuPage/AdminMenuPage";
 import Header from "./components/header/Header";
 import Trends from "./components/trends/Trends";
+import AdminAddProducts from "./pages/admin/adminAddProducts/AdminAddProducts";
 
 const App = () => {
     return(
@@ -25,9 +27,11 @@ const App = () => {
                     <Route path="/admin/main" element={<AdminMainPage/>}/>
                     <Route path="/admin/menu" element={<AdminMenuPage/>}/>
                     <Route path="/admin/menu/:menu_name" element={<AdminProductsPage/>}/>
+                    <Route path="/admin/addProducts" element={<AdminAddProducts/>}/>
                 </Route>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
+            <Toaster/>
         </BrowserRouter>
     );
 };

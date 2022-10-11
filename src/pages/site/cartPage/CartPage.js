@@ -1,7 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {NavLink} from "react-router-dom";
-import {Outlet} from "react-router-dom";
-import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
 import burger from "../../../assets/images/Burger1.png";
 import remove from "../../../assets/icons/remove.png";
@@ -9,6 +7,18 @@ import right_arrow from "../../../assets/icons/right-arr.svg";
 import s from "./CartPage.module.css";
 
 const CartPage = () => {
+    const [product, setProduct] = useState({});
+
+    const getProduct = () => {
+        setProduct(localStorage.getItem('cart'));
+    }
+
+    console.log(product);
+
+    useEffect( () => {
+        getProduct();
+    })
+
     return (
         <>
             <div className={s.container}>
@@ -40,7 +50,7 @@ const CartPage = () => {
                         <tr className={s.product_container}>
                             <td className={s.product_box}>
                                 <div className={s.product_img}>
-                                    <img src={burger} alt=""/>
+                                    <img src={product.img} alt=""/>
                                 </div>
                                 <div>
                                     <p>Чизбургер</p>
@@ -60,31 +70,6 @@ const CartPage = () => {
                             </td>
                             <td className={s.remove}>
                                 <img src={remove}  alt=""/>
-                            </td>
-                        </tr>
-                        <tr className={s.product_container}>
-                            <td className={s.product_box}>
-                                <div className={s.product_img}>
-                                    <img src={burger} alt=""/>
-                                </div>
-                                <div>
-                                    <p>Чизбургер</p>
-                                </div>
-                            </td>
-                            <td>
-                                <input type="text"/>
-                            </td>
-                            <td>
-                                <input type="text"/>
-                            </td>
-                            <td>
-                                <p>200 сом</p>
-                            </td>
-                            <td>
-                                <p>200 сом</p>
-                            </td>
-                            <td className={s.remove}>
-                                <img src={remove} alt=""/>
                             </td>
                         </tr>
                         <tr className={s.sum_cell}>
@@ -114,7 +99,6 @@ const CartPage = () => {
                         </tfoot>
                     </table>
                 </div>
-                <Outlet/>
             </div>
             <Footer/>
         </>
