@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, Link} from "react-router-dom";
 import toast from "react-hot-toast";
 import api from "../../../constants/api";
 import SideBar from "../../../components/sideBar/SideBar";
@@ -7,9 +7,9 @@ import search from "../../../assets/icons/search.svg";
 import notification from "../../../assets/icons/new.svg";
 import divider from "../../../assets/icons/h-divider.svg";
 import photo from "../../../assets/icons/photo.svg";
-import s from "./AdminProductsPage.module.css";
+import s from "./AdminChangeProducts.module.css";
 
-const AdminProductsPage = () => {
+const AdminChangeProducts = () => {
     const params = useParams();
     const [product, setProduct] = useState([]);
 
@@ -62,6 +62,8 @@ const AdminProductsPage = () => {
             })
     }
 
+    const getLink = (id) => '/admin/updateProducts/' + params.menu_name + '/' + id;
+
     return (
         <div className={s.container}>
             <SideBar/>
@@ -84,7 +86,10 @@ const AdminProductsPage = () => {
                                     <p>{item.desc}</p>
                                     <span>{item.price}</span>
                                     <div className={s.btn_box}>
-                                        <button className={s.edit_btn}>Редактировать</button>
+                                        <Link to={getLink(item.id)}>
+                                            <button className={s.edit_btn}>Редактировать</button>
+                                        </Link>
+
                                         <button className={s.delete_btn} onClick={() => deleteProducts(item.id)}>Удалить</button>
                                     </div>
                                 </div>
@@ -97,4 +102,4 @@ const AdminProductsPage = () => {
     );
 };
 
-export default AdminProductsPage;
+export default AdminChangeProducts;
