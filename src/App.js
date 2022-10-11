@@ -12,6 +12,9 @@ import Header from "./components/header/Header";
 import Trends from "./components/trends/Trends";
 import AdminAddProducts from "./pages/admin/adminAddProducts/AdminAddProducts";
 import AdminUpdateProducts from "./pages/admin/adminUpdateProducts/AdminUpdateProducts";
+import AdminChangeFeedback from "./pages/admin/adminChangeFeedback/AddChangeFeedback";
+import AdminAddFeedback from "./pages/admin/adminAddFeedback/AdminAddFeedback";
+import AdminUpdateFeedback from "./pages/admin/adminUpdateFeedback/AdminUpdateFeedback";
 
 const App = () => {
     return(
@@ -33,6 +36,9 @@ const App = () => {
                     <Route path="/admin/menu/:menu_name" element={<AdminChangeProducts/>}/>
                     <Route path="/admin/addProducts" element={<AdminAddProducts/>}/>
                     <Route path="/admin/updateProducts/:menu_name/:id" element={<AdminUpdateProducts/>}/>
+                    <Route path="/admin/feedback/:feedback_el" element={<AdminChangeFeedback/>}/>
+                    <Route path="/admin/addFeedback" element={<AdminAddFeedback/>}/>
+                    <Route path="/admin/updateFeedback/:feedback_el/:id" element={<AdminUpdateFeedback/>}/>
                 </Route>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>

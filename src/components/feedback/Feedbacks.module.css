@@ -1,6 +1,7 @@
 .container{
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 5% 80px;
 }

@@ -44,7 +44,7 @@ const SideBar = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="#">
+                            <NavLink to="/admin/feedback/feedback">
                                 <img src={feedback} alt=""/>
                                 Отзывы
                             </NavLink>
