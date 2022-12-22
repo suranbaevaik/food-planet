@@ -8,9 +8,6 @@ import NotFoundPage from "./pages/site/notFoundPage/NotFoundPage";
 import AdminMainPage from "./pages/admin/adminMainPage/AdminMainPage";
 import AdminChangeProducts from "./pages/admin/adminChangeProducts/AdminChangeProducts";
 import AdminMenuPage from "./pages/admin/adminMenuPage/AdminMenuPage";
-import Header from "./components/header/Header";
-import Trends from "./components/trends/Trends";
-import Menu from "./components/menu/Menu";
 import AdminAddProducts from "./pages/admin/adminAddProducts/AdminAddProducts";
 import AdminUpdateProducts from "./pages/admin/adminUpdateProducts/AdminUpdateProducts";
 import AdminChangeFeedback from "./pages/admin/adminChangeFeedback/AddChangeFeedback";
@@ -22,14 +19,9 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 {/*Клиент*/}
-                <Route path="/" element={<Header/>}>
-                    <Route path="/" element={<MainPage/>}>
-                        <Route path="/trends/:trend_name" element={<Trends/>}/>
-                        <Route path="/menu/:menu_item" element={<Menu/>}/>
-                    </Route>
-                    <Route path="/cart" element={<CartPage/>}/>
-                    <Route path="/checkout" element={<CheckoutPage/>}/>
-                </Route>
+                <Route path="/" element={<MainPage/>}/>
+                <Route path="/cart" element={<CartPage/>}/>
+                <Route path="/checkout" element={<CheckoutPage/>}/>
 
                 {/*Админ*/}
                 <Route>

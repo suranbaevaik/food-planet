@@ -17,7 +17,7 @@
 
 .list_menu{
     list-style: none;
-    margin-right: 270px;
+    margin-right: 195px;
 }
 
 .list_menu li{
@@ -25,18 +25,19 @@
     padding: 0 20px;
 }
 
-.list_menu li a{
-    text-decoration: none;
+.list_menu li button{
+    background: none;
+    border: none;
+    font-size: 16px;
     color: #1D3130;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    text-align: center;
-    line-height: 19px;
 }
 
-.list_menu li a:hover{
+.list_menu li button:hover{
     color: #FF583E;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .sort_box{

@@ -17,7 +17,7 @@
 
 .list_trends{
     list-style: none;
-    margin-right: 270px;
+    margin-right: 190px;
 }
 
 .list_trends li{
@@ -25,18 +25,19 @@
     padding: 0 20px;
 }
 
-.list_trends li a{
-    text-decoration: none;
+.list_trends li button{
+    background: none;
+    border: none;
+    font-size: 16px;
     color: #1D3130;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    text-align: center;
-    line-height: 19px;
 }
 
-.list_trends li a:hover{
+.list_trends li button:hover{
     color: #FF583E;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .container{
@@ -44,14 +45,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 30px 5%;
+    padding: 0 5%;
 }
 
 .trend_card{
     display: flex;
     box-sizing: border-box;
     margin-right: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding: 0 16px;
     flex-direction: column;
     justify-content: flex-end;

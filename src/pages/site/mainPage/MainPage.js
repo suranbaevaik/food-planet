@@ -6,10 +6,12 @@ import Benefits from "../../../components/benefits/Benefits";
 import Feedback from "../../../components/feedback/Feedback";
 import Footer from "../../../components/footer/Footer";
 import Trends from "../../../components/trends/Trends";
+import Header from "../../../components/header/Header";
 
 const MainPage = () => {
     return (
         <>
+            <Header/>
             <Banner/>
             <Trends/>
             <Menu/>

@@ -7,6 +7,7 @@ import s from "./CheckoutPage.module.css";
 const CheckoutPage = () => {
     return (
         <>
+            <Header/>
             <div className={s.container}>
                 <h3 className={s.title}>Оформление заказа</h3>
                 <div className={s.order_box}>

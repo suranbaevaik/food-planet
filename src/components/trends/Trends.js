@@ -1,22 +1,24 @@
 import React, {useEffect, useState} from "react";
-import {NavLink, useParams} from "react-router-dom";
 import api from "../../constants/api";
 import TrendElement from "./TrendElement";
 import s from "./Trends.module.css";
 
 const Trends = () => {
-    const params = useParams();
     const [trend, setTrend] = useState([]);
 
-    const getTrends = () => {
-        const url = api[params.trend_name];
-        fetch(url)
+    const changeTab = (e) => {
+        const id = e.target.id
+        fetch(api[id])
             .then(response => response.json())
             .then(data => setTrend(data))
     }
 
     useEffect(() => {
-        getTrends()
+        if (trend.length >= 0){
+            fetch(api.burgers)
+                .then(response => response.json())
+                .then(data => setTrend(data))
+        }
     }, [])
 
     const elements = trend.map((item, index) => {
@@ -29,21 +31,19 @@ const Trends = () => {
         />
     })
 
-    const setActive = ({isActive}) => isActive ? 'active' : '';
-
     return (
         <>
             <div className={s.nav_bar}>
                 <h2 className={s.nav_title}>Новинки</h2>
                 <nav>
                     <ul className={s.list_trends}>
-                        <li><NavLink to="/trends/pizza" className={setActive}>Пицца</NavLink></li>
-                        <li><NavLink to="/trends/burgers" className={setActive}>Бургеры</NavLink></li>
-                        <li><NavLink to="/trends/sushi" className={setActive}>Суши</NavLink></li>
-                        <li><NavLink to="/trends/rolls" className={setActive}>Роллы</NavLink></li>
-                        <li><NavLink to="/trends/salads" className={setActive}>Салаты</NavLink></li>
-                        <li><NavLink to="/trends/desserts" className={setActive}>Десерты</NavLink></li>
-                        <li><NavLink to="/trends/drinks" className={setActive}>Напитки</NavLink></li>
+                        <li><button onClick={changeTab} id="pizza">Пицца</button></li>
+                        <li><button onClick={changeTab} id="burgers">Бургеры</button></li>
+                        <li><button onClick={changeTab} id="sushi">Суши</button></li>
+                        <li><button onClick={changeTab} id="rolls">Роллы</button></li>
+                        <li><button onClick={changeTab} id="salads">Салаты</button></li>
+                        <li><button onClick={changeTab} id="desserts">Десерты</button></li>
+                        <li><button onClick={changeTab} id="drinks">Напитки</button></li>
                     </ul>
                 </nav>
             </div>

@@ -5,6 +5,7 @@ import burger from "../../../assets/images/Burger1.png";
 import remove from "../../../assets/icons/remove.png";
 import right_arrow from "../../../assets/icons/right-arr.svg";
 import s from "./CartPage.module.css";
+import Header from "../../../components/header/Header";
 
 const CartPage = () => {
     const [product, setProduct] = useState({});
@@ -21,6 +22,7 @@ const CartPage = () => {
 
     return (
         <>
+            <Header/>
             <div className={s.container}>
                 <div className={s.title_box}>
                     <h3>Корзина</h3>
