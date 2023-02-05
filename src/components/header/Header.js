@@ -30,7 +30,7 @@ const Header = () => {
                         </li>
                         <li>
                             <img src={phoneIcon} alt=""/>
-                            <NavLink to="#">+996500405988</NavLink>
+                            <a href="tel:+996500405988">+996500405988</a>
                         </li>
                         <li>
                             <NavLink to="/cart">

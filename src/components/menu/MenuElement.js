@@ -9,7 +9,7 @@ const MenuElement = (props) => {
             <img className={s.pizza_img} src={props.img} alt=""/>
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
-            <span>{props.price}</span>
+            <span>{props.price} сом</span>
             <p><img className={s.minus} src={minus} alt=""/>
                 1
                 <img className={s.plus} src={plus} alt=""/>

@@ -25,9 +25,9 @@ const Menu = () => {
     const elements = menuItem.map((item, index) => {
         return <MenuElement
             key={index}
-            img={item.img}
+            img={item.image}
             title={item.title}
-            desc={item.desc}
+            desc={item.description}
             price={item.price}
         />
     })

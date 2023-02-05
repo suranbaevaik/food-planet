@@ -35,7 +35,7 @@ const TrendElement = (props) => {
             <img className={s.burger_img} src={props.img}/>
             <h2>{props.title}</h2>
             <p>{props.desc}</p>
-            <span>{props.price}</span>
+            <span>{props.price} сом</span>
             <p><img className={s.minus} src={minus} alt=""/>
                 1
                 <img className={s.plus} src={plus} alt=""/>

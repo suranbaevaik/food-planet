@@ -20,7 +20,7 @@ const Feedback = () => {
     const elements = feedback.map((item) => {
         return <FeedbackElement
             key={item.id}
-            img={item.img}
+            img={item.image}
             name={item.name}
             text={item.text}
             date={item.date}

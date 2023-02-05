@@ -24,9 +24,9 @@ const Trends = () => {
     const elements = trend.map((item, index) => {
         return <TrendElement
             key={index}
-            img={item.img}
+            img={item.image}
             title={item.title}
-            desc={item.desc}
+            desc={item.description}
             price={item.price}
         />
     })
