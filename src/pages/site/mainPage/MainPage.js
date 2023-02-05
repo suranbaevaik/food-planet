@@ -9,6 +9,7 @@ import Trends from "../../../components/trends/Trends";
 import Header from "../../../components/header/Header";
 
 const MainPage = () => {
+    window.scrollTo(0, 0);
     return (
         <>
             <Header/>
